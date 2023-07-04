@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom'
-import { Logo } from '@pmndrs/branding'
+import './styles.scss'
 import App from './App'
 import {BsInstagram } from 'react-icons/bs'
 import { useState } from 'react'
-import './styles.scss' 
 
 function Overlay() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -17,7 +16,7 @@ function Overlay() {
         <BsInstagram size={30}/>
       </a>
       <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate3d(-50%,-50%,0)' }}>
-        <h1 className='name' >Aksoft</h1>
+        <h1 className='name' style={{ margin: 0, padding: 0, fontSize: '8em', fontWeight: 500, letterSpacing: '-0.05em' }}>Aksoft</h1>
       </div>
       <div style={{ position: 'absolute', top: '60%', left: '50%', width: '100%',textAlign: 'center', transform: 'translate3d(-50%,-50%,0)' }}>
         <h2 style={{ margin: 0, padding: 0, fontSize: '2em', fontWeight: 500, letterSpacing: '-0.05em' }}>Ведутся технические работы</h2>
